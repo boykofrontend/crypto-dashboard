@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: $montserrat;
+  color: $text;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  @media (min-width: $screen-xl-max) {
+    width: 1440px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (max-width: $screen-lg-max) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &-fluid {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+
+  &-unset {
+    overflow: unset;
+  }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: unset;
+  -webkit-box-shadow: 0 0 0 $white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.image-placeholder {
+  line-height: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin:  0 auto;
+  top: 5%;
+  max-height: 90%;
+  max-width: 90%;
+  overflow: hidden;
+
+  .react-loading-skeleton {
+    margin-bottom: 2%;
+  }
+}

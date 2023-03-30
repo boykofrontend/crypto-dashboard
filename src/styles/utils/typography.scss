@@ -1,0 +1,110 @@
+// @font-face {
+//   font-family: "Brother 1816";
+//   src: url("../../utils/fonts/Brother-1816-Bold.woff") format('woff');
+//   font-display: swap;
+// }
+
+// disable text selection
+@mixin disableSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@for $i from 1 through 5 {
+  h#{$i} {
+    color: $black;
+    font-style: normal;
+    font-weight: 700;
+
+    @if $i==1 {
+      // font-family: 'Brother 1816';
+      font-size: 50px;
+      line-height: 130%;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 40px;
+      }
+    }
+
+    @if $i==2 {
+      // font-family: 'Brother 1816';
+      font-size: 40px;
+      line-height: 61px;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 30px;
+        line-height: 46px;
+      }
+    }
+
+    @if $i==3 {
+      // font-family: 'Brother 1816';
+      font-size: 34px;
+      line-height: 52px;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 30px;
+        line-height: 46px;
+      }
+    }
+
+    @if $i==4 {
+      // font-family: 'Brother 1816';
+      font-size: 26px;
+      line-height: 39px;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 30px;
+        line-height: 46px;
+      }
+    }
+
+    @if $i==5 {
+      // font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.text {
+  &-small {
+    // font-family: 'Brother 1816';
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  &-large {
+    // font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &-through {
+    // font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $light-grey;
+    text-decoration: line-through;
+  }
+
+  &-extra-small {
+    // font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $text;
+  }
+}

@@ -1,0 +1,2 @@
+export const COMPARE_API_KEY = process.env.REACT_APP_CRYPTOCOMPARE_API_KEY;
+export const COMPARE_API_PATH = process.env.REACT_APP_CRYPTOCOMPARE_API_PATH;

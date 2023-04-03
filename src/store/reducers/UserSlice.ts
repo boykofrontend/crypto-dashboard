@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IUser } from "../../models/IUser";
+// import { IUser } from "../../models/INews";
 
 interface UserState {
-  users: IUser[];
+  // users: IUser[];
   isLoading: boolean;
   error: string;
 }
 
 const initialState: UserState = {
-  users: [],
+  // users: [],
   isLoading: false,
   error: "",
 };

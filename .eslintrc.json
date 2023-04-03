@@ -75,7 +75,8 @@
       {
         "props": true,
         "ignorePropertyModificationsFor": [
-          "registration"
+          "registration",
+          "state"
         ]
       }
     ],
